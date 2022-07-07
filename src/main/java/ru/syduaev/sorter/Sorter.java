@@ -1,5 +1,18 @@
+package ru.syduaev.sorter;
+
+/**
+ * Сортировщик массивов.
+ */
 public class Sorter {
 
+    /**
+     * Метод быстрой сортировки массива (алгоритм Тони Хоара).
+     *
+     * @param unsortedArray Исходный массив.
+     * @param direction {@link SortDirection направление сортировки}.
+     *
+     * @return Отсортированный массив.
+     */
     public static int[] sort(int[] unsortedArray, SortDirection direction) {
         return doSort(unsortedArray, 0, unsortedArray.length - 1, direction);
     }
