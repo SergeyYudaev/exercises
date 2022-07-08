@@ -5,12 +5,23 @@ package ru.syduaev.sorter;
  */
 public class Sorter {
 
+    private static final SortDirection DEFAULT_SORT_DIRECTION = SortDirection.ASC;
+
+    /**
+     * Метод быстрой сортировки массива по возрастанию (алгоритм Тони Хоара).
+     *
+     * @param unsortedArray Исходный массив.
+     * @return Отсортированный массив.
+     */
+    public static int[] sort(int[] unsortedArray) {
+        return sort(unsortedArray, DEFAULT_SORT_DIRECTION);
+    }
+
     /**
      * Метод быстрой сортировки массива (алгоритм Тони Хоара).
      *
      * @param unsortedArray Исходный массив.
-     * @param direction {@link SortDirection направление сортировки}.
-     *
+     * @param direction     {@link SortDirection направление сортировки}.
      * @return Отсортированный массив.
      */
     public static int[] sort(int[] unsortedArray, SortDirection direction) {
