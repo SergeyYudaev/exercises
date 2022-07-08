@@ -9,8 +9,8 @@ class SorterTest {
 
     @Test
     void sortAsk() {
-        var unsortedArray = generateArray(100);
-        var sortedArray = Sorter.sort(unsortedArray, SortDirection.ASC);
+        int[] unsortedArray = generateArray(100);
+        int[] sortedArray = Sorter.sort(unsortedArray, SortDirection.ASC);
 
         for (int i = 1; i < unsortedArray.length; i++) {
             assertTrue(sortedArray[i] >= sortedArray[i - 1]);
@@ -21,8 +21,8 @@ class SorterTest {
 
     @Test
     void sortDesk() {
-        var unsortedArray = generateArray(100);
-        var sortedArray = Sorter.sort(unsortedArray, SortDirection.DESC);
+        int[] unsortedArray = generateArray(100);
+        int[] sortedArray = Sorter.sort(unsortedArray, SortDirection.DESC);
 
         for (int i = 1; i < unsortedArray.length; i++) {
             assertTrue(sortedArray[i] <= sortedArray[i - 1]);

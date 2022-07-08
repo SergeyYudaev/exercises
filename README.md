@@ -1,7 +1,7 @@
 # Либа-демонстратор.
 
-### Использование.
-
+# Использование.
+## Импорт либы.
 ```xml
 <project>
     ...
@@ -22,3 +22,10 @@
     ...
 </project>
 ```
+## Запуск из командной строки
+- скачать утилиту https://github.com/SergeyYudaev/sorter/blob/sorter-repo/sorter-0.0.1-SNAPSHOT.jar 
+- Windows. В консоли ввести следующие команды: 
+  - cd \
+  - cd users\[имя пользователя]\downloads  
+  - chcp 65001
+  - java -jar sorter-0.0.1-SNAPSHOT.jar

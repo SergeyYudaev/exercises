@@ -30,7 +30,7 @@ public class Sorter {
 
     private static int[] doSort(int[] array, int left, int right, SortDirection direction) {
         if (left < right) {
-            var separator = step(array, left, right, direction);
+            int separator = step(array, left, right, direction);
             doSort(array, left, separator - 1, direction);
             doSort(array, separator, right, direction);
         }
@@ -39,13 +39,13 @@ public class Sorter {
     }
 
     private static int step(int[] array, int left, int right, SortDirection direction) {
-        var central = array[(left + right) / 2];
+        int central = array[(left + right) / 2];
         while (left <= right) {
             left = getLeft(array, left, central, direction);
             right = getRight(array, right, central, direction);
 
             if (left <= right) {
-                var tmp = array[left];
+                int tmp = array[left];
                 array[left] = array[right];
                 array[right] = tmp;
                 left++;
