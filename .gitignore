@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 client.truststore.jks
 *.class
+.m2
 
 ### STS ###
 .apt_generated
