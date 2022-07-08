@@ -1,2 +1,4 @@
 ru\syduaev\sorter\SortDirection.class
+ru\syduaev\sorter\SortApplication.class
+ru\syduaev\sorter\InvalidCharactersValidationException.class
 ru\syduaev\sorter\Sorter.class
